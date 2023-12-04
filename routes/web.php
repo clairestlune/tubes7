@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RecipeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +38,5 @@ Route::get('/add-article', [ArticleController::class, 'new']);
 Route::post('/article', [ArticleController::class, 'store']);
 Route::get('/delete-article/{id}', [ArticleController::class, 'delete']);
 Route::delete('/article/{id}', [ArticleController::class, 'destroy']);
+
+Route::get('/review', [ReviewTableSeeder::class, 'index'])->name('review');
