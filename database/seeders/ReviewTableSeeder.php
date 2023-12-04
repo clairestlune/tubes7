@@ -13,7 +13,7 @@ class ReviewTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $reviews = [
+        $review = [
             [
                 'rating' => '5',
                 'comment' => 'saya sangat suka dengan resep ini',
@@ -31,6 +31,8 @@ class ReviewTableSeeder extends Seeder
                 'created_at' => Carbon::now()
             ]
 
-        ];
+            ];
+            
+        
     }
 }
