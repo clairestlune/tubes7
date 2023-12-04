@@ -13,7 +13,7 @@ class ReviewTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $review = [
+        $reviews = [
             [
                 'rating' => '5',
                 'comment' => 'saya sangat suka dengan resep ini',
