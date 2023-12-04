@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Carbon\Carbon;
+use carbon\Carbon;
 
 class ReviewTableSeeder extends Seeder
 {
@@ -16,9 +16,20 @@ class ReviewTableSeeder extends Seeder
         $reviews = [
             [
                 'rating' => '5',
-                'comment' => 'Saya sangat suka dengan resep ini',
+                'comment' => 'saya sangat suka dengan resep ini',
                 'created_at' => Carbon::now()
             ],
+            [
+                'rating' => '4',
+                'comment' => 'saya suka resep ini, mudah untuk dibuat',
+                'created_at' => Carbon::now()
+                
+            ],
+            [
+                'rating' => '4',
+                'comment' => 'ada beberapa bahan yang perlu ditambahkan agar lebih pas rasa dari masakan ini',
+                'created_at' => Carbon::now()
+            ]
 
         ];
     }
