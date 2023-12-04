@@ -4,7 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use App\Models\Recipe;
 
 class RecipeTableSeeder extends Seeder
 {
@@ -13,7 +15,7 @@ class RecipeTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $recipe = [
+        $recipes = [
             [
                 'title' =>'Spaghetti Carbonara',
                 'photo' =>'https://th.bing.com/th/id/OIP.WDjLazx9UFOY6TGCQsxcEAHaE3?rs=1&pid=ImgDetMain',
